@@ -1,0 +1,647 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Heebo', sans-serif;
+    padding-top: 80px;
+}
+
+/*                                               TOP-BAR FIXA                                                                              */
+
+.uppercase {
+    text-transform: uppercase   ; 
+}
+
+.container {
+    width: 1440px;
+    max-width: 90%;
+    margin: auto;
+    padding: 0 16px;
+}
+
+header {
+    background-color:  #FFF;
+    box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.10);
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+header .logo {
+    display: inline-block;
+    font-size: 27PX;
+}
+
+header .logo a {
+    text-decoration: none;
+    color: black;
+}   
+
+header .logo .ponto-azul {
+    background-color: rgb(74, 74, 244);
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 100%;
+}
+
+
+
+header nav {
+    display: inline-block;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li.menu-icon {
+    display: none;
+}
+
+header nav ul li.menu-icon img {
+    vertical-align: middle;
+}
+
+header nav ul li a {
+    font-size: 15px;
+    color: gray;
+    letter-spacing: 0.3px;
+    margin-right: 24px;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: #3e50e5;
+}
+
+header nav ul li.last-of-type a {
+    margin-right: 0px;
+}
+
+section.hero img {
+    width: 100%;   
+    height: auto;
+}
+
+section.hero {
+position: relative;
+}
+
+.hero-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+.hero-content .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.hero-content h1 {
+    max-width: 495px;
+    color: #FFF;
+    font-size: 50px;
+    letter-spacing: 1.25px;
+    line-height: 56px;
+    margin-bottom: 16px;
+    margin-top: 0;
+    font-weight: normal;
+}
+
+.hero-content p {
+    max-width: 495px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    line-height: 28px;
+    margin-bottom: 16px;
+    margin-top: 0;
+    }
+
+.hero-content button {
+    display: flex;
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    padding: 10px;
+    font-weight: 700;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    gap: 10px;
+    background: var(--blue, #3E50E5);
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}
+ 
+.hero-content button:hover {
+    color: #3E50E5;
+    background-color: #FFF;
+    border: 1px solid #3E50E5;
+}
+
+section.best-sellers {
+    padding-top: 80px   ;
+}
+
+section.best-sellers h2 {
+    text-align: center;
+    font-size: 34px;
+    letter-spacing: 0.85px;
+    line-height: 42px;
+    font-weight: normal;
+    margin: 0 0 14px 0;
+}
+
+section.best-sellers .products-slider {
+    margin-top: 76px;
+}
+
+section.best-sellers hr {
+    border: none;
+    border-top: 5px solid rgb(74, 74, 255);
+    width: 66px;
+}
+
+section.best-sellers .container {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 8px;
+}
+
+section.best-sellers .products-slider .products {
+    border-radius: 8px;
+    border: 1.5px solid #bcbcbc;
+    width: 33%;
+    text-align: center;
+    margin: 0 8px;
+    padding: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+section.best-sellers .products-slider .products img {
+    max-width: 100%;
+}
+
+section.best-sellers .products-slider .products.new::before {
+    margin: 12px;
+    content: "New";
+    color: #FFF;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 6px 15px;
+    text-align: center;
+    font-size: 14px;    
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21px;
+    border-radius: 40px;
+    background-color:#3E50E5;
+}
+
+section.best-sellers .products-slider .products .product-info {
+    margin-top: 50px;
+}
+
+section.best-sellers .products-slider .products .product-info .categories {
+    font-weight: normal;
+    color: rgb(74, 74, 244);
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    line-height: 30px;
+    margin-bottom: 8px;
+    margin-top: 0;
+
+}
+
+section.best-sellers .products-slider .products .product-info .title {
+    font-size: 20px;
+    letter-spacing: 0.5;
+    line-height: 26px;
+    margin-bottom: 6px;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+section.best-sellers .products-slider .products .product-info .price {
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 0.7px;
+    line-height: 40px;
+    margin-bottom: 16px;
+    margin-top: 0;
+}
+
+section.best-sellers .products-slider .products button {
+    height: 50px;
+    width: 219.5px;
+    border-radius: 220px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+    line-height: 24px;
+    color: #3E50E5;
+    background-color: white;
+    max-width: 100%;
+    border: 1px solid black;  
+    cursor: pointer;  
+}
+
+section.best-sellers .products-slider .products:hover .product-info button {
+    background-color: #3E50E5;
+    color: white;
+    border: 1px solid #3E50E5;   
+}
+
+section.best-sellers .products-slider .products .product-info .price .original-price {
+
+    color:rgb(163, 163, 163);
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    line-height: 30px;
+    text-decoration: line-through;
+    display: block;
+
+}
+
+section.best-sellers .products-slider .products .product-info .price .discounted-price {
+    color: rgb(74, 74, 244);
+}
+
+section.newsletter {
+    background-color: #eaeaea;
+    max-width: 955px;
+    text-align: center;
+    padding: 72px;
+    margin: 70px auto;
+    border-radius: 5px;
+}
+
+section.newsletter h3 {
+    font-size: 24px;
+    letter-spacing: 0.6;
+    line-height: 42px;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: black;
+}
+
+section.newsletter p {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 42px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: black;
+}
+
+section.newsletter form {
+    display: flex;
+    justify-content: center;
+}
+
+section.newsletter form input {
+    color: gray;
+    background-color: #FFF;
+    font-size: 16px;
+    padding: 14px 24px;
+    letter-spacing: 0.35;
+    height: 50px;
+    width: 326px;
+    max-width: 80%;
+    border-radius: 60px 0 0 60px;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+section.newsletter form button {
+    font-size: 16px;
+    color: #FFF;
+    height: 50px;
+    width: 145px;
+    max-width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgb(74, 74, 244);
+    background-color: rgb(74, 74, 244);
+    border-radius: 0 60px 60px 0;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+section.newsletter form button:hover {
+    color: #3E50E5;
+    background-color: #FFF;
+    border: 1px solid #575757;
+}
+
+footer .bottom-nav {
+    padding: 60px 0;
+    background-color: #3E3E3E;
+}
+
+footer .bottom-nav .container {
+    max-width: 90%;
+    min-width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .bottom-nav ul {
+    list-style: none;
+}
+
+footer .bottom-nav ul li a {
+    color: #E0E0E0;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    line-height: 22px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+footer .bottom-nav ul li a:hover {
+    color: #3E50E5;
+}
+
+footer .bottom-nav ul li.list-title {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    line-height: 26px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #FFF;
+}
+
+footer .copyright-text {
+    color: white;
+    background-color: #2B2B2B;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    line-height: 22px;
+}
+
+
+/* ************************************
+********** CSS MEDIA QUERIES **********
+************************************* */
+
+/* Inicio design para desktop */
+@media screen and (max-width: 1440px) {
+    .container {
+        width: 1180px;
+        max-width: 90%;
+    }
+
+    body {
+        padding-top: 70px;
+    }
+
+    .header {
+        height: 70px;
+    }
+
+    .hero-content h1 {
+        font-size: 44px;
+        line-height: 50px;
+        letter-spacing: 1.1px;
+        margin-bottom: 12px;
+    }
+    
+    .hero-content p {
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: 0.45;
+        margin-bottom: 12px;
+        }
+    
+    .hero-content button {
+        font-size: 14px;
+        letter-spacing: 0.35px;
+        line-height: 21px;
+    }
+}
+/* FInal design para desktop */
+
+
+
+/* Inicio design para tablet */
+@media screen and (max-width: 960px) {
+    .container {
+        max-width: 92%;
+    }
+
+    header .logo {
+        font-size: 24PX;
+    }
+
+    header nav ul li {
+        display: none;
+    }
+    
+    header nav ul li.menu-icon {
+        display: inline-block;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+        line-height: 46px;
+        letter-spacing: 1.0px;
+    }
+    
+    .hero-content p {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.4;
+        }
+    
+    .hero-content button {
+        width: 196;
+        font-size: 14px;
+        letter-spacing: 0.35px;
+        line-height: 21px;
+    }
+
+    section.best-sellers .container {
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    section.best-sellers .products-slider .products {
+        min-width: 220px;
+        margin: 17px 8px;
+    }
+
+    footer .bottom-nav {
+        padding: 40px 0;
+        background-color: #3E3E3E;
+    }
+    
+    footer .bottom-nav .container {
+        max-width: 90%;
+        min-width: 75%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer .bottom-nav ul {
+        list-style: none;
+    }
+    
+    footer .bottom-nav ul li a {
+        font-size: 14px;
+        letter-spacing: 0.4px;
+        line-height: 20px;
+ 
+    }
+    
+    footer .bottom-nav ul li.list-title {
+        font-size: 18px;
+        letter-spacing: 0.4px;
+        line-height: 23px;
+    }
+    
+    footer .copyright-text {
+        font-size: 16px;
+        letter-spacing: 0.3px;
+        line-height: 22px;
+    }
+    
+}
+/* Final design para tablet */
+
+
+
+/* Inicio design para mobile */
+@media screen and (max-width: 576px) {
+    .container {
+        max-width: 92%;
+    }
+    
+    header .logo {
+        font-size: 18PX;
+    }
+
+    header .logo .ponto-azul {
+        height: 8px;
+        width: 8px;
+    }
+
+    header nav ul li.menu-icon img {
+        width: 20px;
+        height: auto;
+    }
+
+    .hero-content {
+        position: static;
+    }
+
+    .hero-content h1 {
+        text-align: center;
+        color: black;
+        font-size: 32px;
+        line-height: 38px;
+        letter-spacing: 0.8px;
+        margin-bottom: 32px;
+        margin-top: 27px;
+    }
+    
+    .hero-content p {
+        display: none;
+        }
+    
+    .hero-content button {
+        width: 196;
+        font-size: 14px;
+        letter-spacing: 0.35px;
+        line-height: 21px;
+        margin: auto;
+    }
+
+    section.best-sellers .products-slider .products {
+        max-width: 400px;
+        width: 82%;
+    }
+
+    section.newsletter form button {
+        font-size: 12px;
+        width: 101px;
+            height: 50px;
+        
+    }
+
+    section.newsletter form input {
+        width: 209px;
+        height: 50px;
+        padding: 14px 24px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    
+    section.newsletter {
+        margin: 30px auto;
+    }
+
+    footer .bottom-nav {
+        padding: 30px 0;
+        background-color: #3E3E3E;
+        
+    }
+
+    footer .bottom-nav .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center; 
+        gap: 32px;
+    }
+
+
+    footer .bottom-nav ul li.list-title {
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+}
+/* Final design para mobile */
